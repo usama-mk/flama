@@ -1,0 +1,43 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.homeLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homeRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.flama{
+    position: absolute;
+    width: 425px;
+    height: 252px;
+    left: 19px;
+    top: -3px;
+    overflow: visible;
+}
+
+.flama_m{
+    left: 0px;
+    top: 19px;
+    position: absolute;
+    overflow: visible;
+    width: 426px;
+    height: 252px;
+    text-align: left;
+    font-family: Biancha;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 107px;
+    color: rgba(254,254,254,1);
+}
