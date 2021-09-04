@@ -21,3 +21,31 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  .imageShow{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .imageShowClose{
+      /* width: 100%; */
+      /* display: flex;
+      justify-content: flex-end; */
+      position: absolute;
+      top: 2%;
+      right: 2%;
+  }
+
+  .imageCloseButton{
+      color: white;
+      margin: 3px;
+  }
+
+  .pointer{
+      cursor: pointer;
+  }
+
+  .openedImageWrapper{
+      justify-content: center;
+  }

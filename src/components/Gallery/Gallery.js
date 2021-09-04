@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Gallery.css'
 import g1 from '../../assets/g1.png'
 import g2 from '../../assets/g2.png'
 import g3 from '../../assets/g3.png'
 
 function Gallery({setGalleryModalIsOpen}) {
+    const [isImageOpen, setIsImageOpen]= useState(false)
+    const [image, setImage]= useState('')
+
+    const handleOnImageClick=(src)=>{
+        setIsImageOpen(true)
+        setImage(src)
+    }
+
     const images=[
         {
             src: g1,
@@ -34,13 +42,24 @@ function Gallery({setGalleryModalIsOpen}) {
     return (
         <div className="gallery">
             {
-                images.map((image)=>{
-                    return(
-                        <div className="galleryItem" >
-                            <img src={image.src} height={image.height} width={image.width} alt="" />
-                        </div>
-                    )
-                })
+                isImageOpen?(
+                    <div className="imageShow">
+                       <div className="imageShowClose">
+                       <span className="imageCloseButton pointer" onClick={()=> setIsImageOpen(false)} >X</span>
+                       </div>
+                       <div className="openedImageWrapper">
+                       <img src={image}  alt="" />
+                       </div>
+                    </div>
+                ):(
+                    images.map((image)=>{
+                        return(
+                            <div className="galleryItem" >
+                                <img className="pointer" onClick={()=>{handleOnImageClick(image.src)}} src={image.src} height={image.height} width={image.width} alt="" />
+                            </div>
+                        )
+                    })
+                )
             }
 
         {/* <button onClick={()=>setGalleryModalIsOpen(false)}>close</button> */}
