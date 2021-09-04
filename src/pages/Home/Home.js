@@ -3,6 +3,7 @@ import "./Home.css";
 import Modal from 'react-modal';
 import { ProGallery } from 'pro-gallery';
 import 'pro-gallery/dist/statics/main.css';
+import Gallery from "../../components/Gallery/Gallery";
 
 const customStyles = {
     content: {
@@ -15,10 +16,11 @@ const customStyles = {
       // backgroundColor: 'green',
       // opacity: '1'
     boxShadow: 'rgba(0, 0, 0, 0.96) 0px 30px 70px 70px',
-
-      
+      backgroundColor: 'transparent',
+      border: 'none',
     },
     
+    backgroundColor: 'transparent',
     
     overlay: {
       // opacity:' 0.55',
@@ -59,14 +61,16 @@ function Home() {
        
        <Modal
          isOpen={modalIsOpen}
-         onAfterOpen={afterOpenModal}
+        //  onAfterOpen={afterOpenModal}
          onRequestClose={()=>setModalIsOpen(false)}
          style={customStyles}
          contentLabel="Example Modal"
+         id='Modal'
          
        >
+         {/* <Gallery/> */}
         
-         <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+          
          <button onClick={()=>setModalIsOpen(false)}>close</button>
          <div>I am a modal</div>
        
