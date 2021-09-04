@@ -52,18 +52,47 @@ function Home() {
       </div>
 
       <div className="homeRight">
+      <svg class="Line" viewBox="0.5 0.5 0.5 41.5">
+				<path id="Line" d="M 0.5 0.5 L 1 42">
+				</path>
+			</svg>
         <div
-          className="homeRightOption"
+          className="homeRightOption pointer"
           onClick={() => setBioModalIsOpen(true)}
         >
+         
           bio
         </div>
-        <div
+
+        {/* Bio */}
+       
+        {/*  */}
+
+        {/* Gallery */}
+        {/* <div
           className="homeRightOption"
           onClick={() => setGalleryModalIsOpen(true)}
         >
           Gallery
+        </div> */}
+        <div  className="galleryy">
+          <div id="galeria-menu-item" class="galeria_menu_item">
+            <div id="galeria-menu-item_z">
+              <svg class="Line_Copy" viewBox="0.5 0.5 0.5 41.5">
+                <path id="Line_Copy" d="M 0.5 0.5 L 1 42"></path>
+              </svg>
+              <svg class="Line_Copy_2" viewBox="0.5 0.5 0.5 41.5">
+				<path id="Line_Copy_2" d="M 0.5 0.5 L 1 42">
+				</path>
+			</svg>
+              <div className="pointer" onClick={() => setGalleryModalIsOpen(true)}  id="Galera">
+                <span>Galería</span>
+              </div>
+            </div>
+          </div>
+          
         </div>
+
         {/* <div className="homeRightOption">musica</div> */}
         {/* Musica component */}
         <div id="musica-menu-item" class="musica_menu_item">
