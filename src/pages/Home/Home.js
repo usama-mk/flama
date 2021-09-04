@@ -6,8 +6,6 @@ import "pro-gallery/dist/statics/main.css";
 import Gallery from "../../components/Gallery/Gallery";
 import Bio from "../../components/Bio/Bio";
 
-
-
 function Home() {
   let subtitle;
   const [galleryModalIsOpen, setGalleryModalIsOpen] = useState(false);
@@ -23,9 +21,13 @@ function Home() {
       // backgroundColor: 'green',
       boxShadow: "rgba(0, 0, 0, 0.96) 0px 30px 70px 70px",
       border: "none",
-      backgroundColor: galleryModalIsOpen?'rgba(0, 0, 0, 0.55)': bioModalIsOpen?'black':'' ,
+      backgroundColor: galleryModalIsOpen
+        ? "rgba(0, 0, 0, 0.55)"
+        : bioModalIsOpen
+        ? "black"
+        : "",
     },
-  
+
     overlay: {
       backgroundColor: "none",
     },
@@ -50,11 +52,56 @@ function Home() {
       </div>
 
       <div className="homeRight">
-        <div className="homeRightOption"  onClick={() => setBioModalIsOpen(true)} >
+        <div
+          className="homeRightOption"
+          onClick={() => setBioModalIsOpen(true)}
+        >
           bio
         </div>
-        <div className="homeRightOption" onClick={() => setGalleryModalIsOpen(true)}>Gallery</div>
-        <div className="homeRightOption">musica</div>
+        <div
+          className="homeRightOption"
+          onClick={() => setGalleryModalIsOpen(true)}
+        >
+          Gallery
+        </div>
+        {/* <div className="homeRightOption">musica</div> */}
+        {/* Musica component */}
+        <div id="musica-menu-item" class="musica_menu_item">
+          <div style={{ display: "flex" }} id="musica-menu-item_u">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "end",
+              }}
+            >
+              <svg
+                style={{ margin: "10px", marginBottom: "1px" }}
+                class="Line_Copy_5"
+                viewBox="0.505 1.247 29.998 0.253"
+              >
+                <path
+                  id="Line_Copy_5"
+                  d="M 0.5045359134674072 1.247006297111511 L 30.50301170349121 1.5"
+                ></path>
+              </svg>
+              <svg
+                style={{ margin: "10px", paddingBottom: "6px" }}
+                class="Line_Copy_6"
+                viewBox="0 0.5 41.503 2"
+              >
+                <path
+                  id="Line_Copy_6"
+                  d="M 0 0.5 L 41.50301361083984 0.5"
+                ></path>
+              </svg>
+            </div>
+
+            <div id="Msica">
+              <span>Música</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <Modal
@@ -76,7 +123,7 @@ function Home() {
         contentLabel="Example Modal"
         id="Modal"
       >
-        <Bio/>
+        <Bio />
       </Modal>
     </div>
   );
