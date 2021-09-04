@@ -5,6 +5,26 @@
                               'embedded-opentype', and 'svg' */
 }
 
+@font-face {
+    font-family: "SnellRoundhand";
+    src: local("SnellRoundhand"), url(../../assets/fonts/Biancha.otf) format("otf");
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+    font-family: "gilroy";
+    src: local("gilroy"), url(../../assets/fonts/gilroy.ttf) format("ttf");
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+    font-family: "Didot";
+    src: local("Didot"), url(../../assets/fonts/Didot.ttc) format("ttc");
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+  }
 .home {
   display: flex;
   justify-content: space-between;
@@ -33,6 +53,8 @@
   top: -3px;
   overflow: visible;
   font-family: Biancha;
+  z-index: 1;
+  
 }
 
 .flama_m {
@@ -48,6 +70,20 @@
   font-weight: normal;
   font-size: 107px;
   color: rgba(254, 254, 254, 1);
+  z-index: 3;
+  opacity: 1;
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons>img{
+    width: 24px;
+    height: 24px;
+   color: white;
 }
 
 /* gallery menu */
@@ -116,9 +152,9 @@
 
 #Galera {
   position: fixed;
-  top: 32%;
-  right: 0%;
+  top: 31.7%;
   left: 93.5%;
+  right: 2%;
   transform: translate(4px, -1.25px) matrix(1, 0, 0, 1, -52, 112.5)
     rotate(90deg);
   transform-origin: center;
@@ -212,7 +248,7 @@
   max-height: 100px;
   position: fixed;
   top: 2%;
-  right: 50px;
+  left: 95.5%;
 }
 
 .Line {
@@ -220,8 +256,8 @@
   position: fixed;
   width: 2.524px;
   height: 43.524px;
-  right: 69.25px;
-  top: 20px;
+  left: 95%;
+  top: 3%;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Line {

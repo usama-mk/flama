@@ -14,12 +14,12 @@
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.bio::-webkit-scrollbar {
+.bioDesc::-webkit-scrollbar {
     display: none;
   }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  .bio {
+  .bioDesc {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }

@@ -5,6 +5,12 @@ import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
 import Gallery from "../../components/Gallery/Gallery";
 import Bio from "../../components/Bio/Bio";
+import yt from '../../assets/yt.png'
+import fb from '../../assets/fb.png'
+import insta from '../../assets/insta.png'
+import sc from '../../assets/sc.png'
+import tt from '../../assets/tt.png'
+import spotify from '../../assets/fb.png'
 
 function Home() {
   let subtitle;
@@ -26,6 +32,7 @@ function Home() {
         : bioModalIsOpen
         ? "black"
         : "",
+      zIndex: '1',
     },
 
     overlay: {
@@ -43,12 +50,19 @@ function Home() {
     >
       <div className="homeLeft">
         <div id="Flama" class="Flama">
-          <div className="flama_m" id="Flama_m">
+          <div style={{opacity:'1'}} className="flama_m" id="Flama_m">
             <span>Flama</span>
           </div>
         </div>
 
-        <div>icons</div>
+        <div className="icons">
+          <img src={insta} alt="" />
+          <img src={fb} alt="" />
+          <img src={yt} alt="" />
+          <img src={tt} alt="" />
+          <img src={sc} alt="" />
+          <img src={spotify} alt="" />
+        </div>
       </div>
 
       <div className="homeRight">
