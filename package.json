@@ -8,8 +8,8 @@
     "@testing-library/user-event": "^12.1.10",
     "pro-gallery": "^3.1.38",
     "react": "^17.0.2",
-    "react-animated-modal": "^1.1.1",
     "react-dom": "^17.0.2",
+    "react-modal": "^3.14.3",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },

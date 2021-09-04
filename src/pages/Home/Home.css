@@ -15,7 +15,7 @@
 .homeRight{
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
 }
 
 .flama{
@@ -40,4 +40,21 @@
     font-weight: normal;
     font-size: 107px;
     color: rgba(254,254,254,1);
+}
+
+.bio{
+    transform: translate(1.5px, -0.75px) matrix(1,0,0,1,-29,80) rotate(90deg);
+		transform-origin: center;
+		 
+		font-family: Didot;
+		font-size: 38px;
+		color: rgba(254,254,254,1);
+        margin-right: -30px;
+        max-height: 100px;
+}
+
+.modalContent{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin: 0;
+    padding: 0;
 }
