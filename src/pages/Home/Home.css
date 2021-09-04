@@ -42,7 +42,7 @@
     color: rgba(254,254,254,1);
 }
 
-.bio{
+.homeRightOption{
     transform: translate(1.5px, -0.75px) matrix(1,0,0,1,-29,80) rotate(90deg);
 		transform-origin: center;
 		 

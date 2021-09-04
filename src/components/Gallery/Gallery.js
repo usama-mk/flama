@@ -4,7 +4,7 @@ import g1 from '../../assets/g1.png'
 import g2 from '../../assets/g2.png'
 import g3 from '../../assets/g3.png'
 
-function Gallery({setModalIsOpen}) {
+function Gallery({setGalleryModalIsOpen}) {
     const images=[
         {
             src: g1,
@@ -43,7 +43,7 @@ function Gallery({setModalIsOpen}) {
                 })
             }
 
-        {/* <button onClick={()=>setModalIsOpen(false)}>close</button> */}
+        {/* <button onClick={()=>setGalleryModalIsOpen(false)}>close</button> */}
         </div>
     )
 }

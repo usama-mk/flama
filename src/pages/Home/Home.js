@@ -4,38 +4,38 @@ import Modal from "react-modal";
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
 import Gallery from "../../components/Gallery/Gallery";
+import Bio from "../../components/Bio/Bio";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    // backgroundColor: 'green',
-    boxShadow: "rgba(0, 0, 0, 0.96) 0px 30px 70px 70px",
-    border: "none",
-    backgroundColor: 'rgba(0, 0, 0, 0.55)',
-  },
 
-  overlay: {
-    backgroundColor: "none",
-  },
-};
 
 function Home() {
   let subtitle;
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [galleryModalIsOpen, setGalleryModalIsOpen] = useState(false);
+  const [bioModalIsOpen, setBioModalIsOpen] = useState(false);
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      // backgroundColor: 'green',
+      boxShadow: "rgba(0, 0, 0, 0.96) 0px 30px 70px 70px",
+      border: "none",
+      backgroundColor: galleryModalIsOpen?'rgba(0, 0, 0, 0.55)': bioModalIsOpen?'black':'' ,
+    },
+  
+    overlay: {
+      backgroundColor: "none",
+    },
+  };
 
-  function afterOpenModal() {
-    subtitle.style.color = "#f00";
-  }
   return (
     <div
       style={{
-        backgroundColor: modalIsOpen ? "black" : "",
-        opacity: modalIsOpen ? "0.55" : "",
+        backgroundColor: galleryModalIsOpen || bioModalIsOpen ? "black" : "",
+        opacity: galleryModalIsOpen || bioModalIsOpen ? "0.55" : "",
       }}
       className="home"
     >
@@ -50,22 +50,33 @@ function Home() {
       </div>
 
       <div className="homeRight">
-        <div className="bio" onClick={() => setModalIsOpen(true)}>
+        <div className="homeRightOption"  onClick={() => setBioModalIsOpen(true)} >
           bio
         </div>
-        <div className="bio">Gallery</div>
-        <div className="bio">musica</div>
+        <div className="homeRightOption" onClick={() => setGalleryModalIsOpen(true)}>Gallery</div>
+        <div className="homeRightOption">musica</div>
       </div>
 
       <Modal
-        isOpen={modalIsOpen}
+        isOpen={galleryModalIsOpen}
         //  onAfterOpen={afterOpenModal}
-        onRequestClose={() => setModalIsOpen(false)}
+        onRequestClose={() => setGalleryModalIsOpen(false)}
         style={customStyles}
         contentLabel="Example Modal"
         id="Modal"
       >
-        <Gallery setModalIsOpen={setModalIsOpen} />
+        <Gallery setGalleryModalIsOpen={setGalleryModalIsOpen} />
+      </Modal>
+
+      <Modal
+        isOpen={bioModalIsOpen}
+        //  onAfterOpen={afterOpenModal}
+        onRequestClose={() => setBioModalIsOpen(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+        id="Modal"
+      >
+        <Bio/>
       </Modal>
     </div>
   );
