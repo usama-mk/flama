@@ -1,6 +1,6 @@
 .gallery{
     height: 600px;
-    width: 500px;
+    width: 700px;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
@@ -49,9 +49,14 @@
 
   .openedImageWrapper{
       justify-content: center;
+      align-items: center;
+     
   }
 
   .openedImageWrapper img{
+      width: 372px;
+      height: 660px;
+    object-fit: contain;
     webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;

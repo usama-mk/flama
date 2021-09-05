@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './Gallery.css'
-import g1 from '../../assets/g1.png'
-import g2 from '../../assets/g2.png'
-import g3 from '../../assets/g3.png'
-import g4 from '../../assets/g4.png'
-import g5 from '../../assets/g5.png'
-import g6 from '../../assets/g6.png'
-import g7 from '../../assets/g7.png'
+import g1 from '../../assets/galleryImages/1.jpeg'
+import g2 from '../../assets/galleryImages/2.jpeg'
+import g3 from '../../assets/galleryImages/3.jpeg'
+import g4 from '../../assets/galleryImages/4.jpeg'
+import g5 from '../../assets/galleryImages/5.jpeg'
+import g6 from '../../assets/galleryImages/6.jpeg'
+import g7 from '../../assets/galleryImages/7.jpeg'
+import g8 from '../../assets/galleryImages/8.jpeg'
 
 function Gallery({setGalleryModalIsOpen}) {
     const [isImageOpen, setIsImageOpen]= useState(false)
@@ -59,6 +60,11 @@ function Gallery({setGalleryModalIsOpen}) {
             width: '200px',
             height: '300px'
         },
+        {
+            src: g8,
+            width: '200px',
+            height: '300px'
+        },
     ]
 
     const openImage=(id)=>{
@@ -78,10 +84,10 @@ function Gallery({setGalleryModalIsOpen}) {
                        </div>
                     </div>
                 ):(
-                    images.map((image)=>{
+                    images.map((image, key)=>{
                         return(
-                            <div className="galleryItem" >
-                                <img className="pointer" onClick={()=>{handleOnImageClick(image.src)}} src={image.src} height={image.height} width={image.width} alt="" />
+                            <div key={key} className="galleryItem" >
+                                <img className="pointer" key={key} onClick={()=>{handleOnImageClick(image.src)}} src={image.src} height={image.height} width={image.width}   alt="" />
                             </div>
                         )
                     })

@@ -74,7 +74,7 @@ function Home() {
           onClick={() => setBioModalIsOpen(true)}
         >
          
-          bio
+          Bio
         </div>
 
         {/* Bio */}
@@ -99,7 +99,7 @@ function Home() {
 				</path>
 			</svg>
               <div className="pointer" onClick={() => setGalleryModalIsOpen(true)}  id="Galera">
-                <span>Galería</span>
+                <span className="galleryText" >Galería</span>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ function Home() {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "end",
+                justifyContent: "flex-end",
               }}
             >
               <svg
