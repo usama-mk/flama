@@ -90,6 +90,8 @@
 .icons {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  bottom: 0%;
 }
 
 .icons > img {
