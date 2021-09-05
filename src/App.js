@@ -8,7 +8,7 @@ function App() {
     <div className="App"> 
     <Tilt className="Tilt" options={{ max : 1 , scale: 1, perspective: 1500,}}  >
     <div  className="App">
-        <img  src={logo} alt="" />
+        <img style={{opacity: '0'}} src={logo} alt="" />
     </div>
        
        
