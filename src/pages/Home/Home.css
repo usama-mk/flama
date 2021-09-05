@@ -19,6 +19,12 @@
   src: local("Didot"), url(../../assets/fonts/Didot.ttc) format("ttc");
 }
 
+
+@font-face {
+    font-family: "Biancha-X3VOa";
+    src: local("Biancha-X3VOa"), url(../../assets/fonts/Biancha-X3VOa.otf) format("otf");
+  }
+
 .ReactModal__Overlay {
   opacity: 0;
   transition: opacity 2000ms ease-in-out;
@@ -280,6 +286,45 @@
   shape-rendering: auto;
 }
 
+
+@media screen and (max-width: 860px) {
+   
+    
+  
+    #Galera {
+      top: 30.7%;
+      left: 94%;
+    }
+     
+    
+    
+  }
+
+  /* @media screen and (max-width: 900px) {
+   
+    
+  
+    #Galera {
+      top: 31.7%;
+      left: 92%;
+    }
+     
+    
+    
+  } */
+
+  @media screen and (max-width: 560px) {
+   
+    
+  
+    #Galera {
+      top: 31.7%;
+      left: 92%;
+    }
+     
+    
+    
+  }
 
 @media screen and (max-width: 460px) {
     .flama {

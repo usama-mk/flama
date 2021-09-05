@@ -1,68 +1,95 @@
-.gallery{
-    height: 600px;
-    width: 700px;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   overflow: auto;
+.gallery {
+  height: 600px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
-.galleryItem{
-    margin: 10px;
+.galleryItem {
+  margin: 10px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .gallery::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .gallery {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+  display: none;
+}
 
-  .imageShow{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transition: display 2000ms ease-in-out;
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
-  .imageShowClose{
-      /* width: 100%; */
-      /* display: flex;
+.imageShow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: display 2000ms ease-in-out;
+}
+
+.imageShowClose {
+  /* width: 100%; */
+  /* display: flex;
       justify-content: flex-end; */
-      position: absolute;
-      top: 2%;
-      right: 2%;
-  }
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
 
-  .imageCloseButton{
-      color: white;
-      margin: 3px;
-  }
+.imageCloseButton {
+  color: white;
+  margin: 3px;
+}
 
-  .pointer{
-      cursor: pointer;
-  }
+.pointer {
+  cursor: pointer;
+}
 
-  .openedImageWrapper{
-      justify-content: center;
-      align-items: center;
-     
-  }
+.openedImageWrapper {
+  justify-content: center;
+  align-items: center;
+}
 
-  .openedImageWrapper img{
-      width: 372px;
-      height: 660px;
-    object-fit: contain;
-    webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-  }
+.openedImageWrapper img {
+  width: 372px;
+  height: 660px;
+  object-fit: contain;
+  webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
 
-  .transparent{
-        opacity:0;
+.transparent {
+  opacity: 0;
+}
+
+@media screen and (max-width: 860px) {
+  .gallery {
+    height: 600px;
+    width: 500px;
   }
+}
+
+@media screen and (max-width: 660px) {
+  .gallery {
+    height: 600px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .gallery {
+    height: 600px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .gallery {
+    height: 600px;
+    width: 290px;
+  }
+}
