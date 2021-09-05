@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import "./Home.css";
 import Modal from "react-modal";
-import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
 import Gallery from "../../components/Gallery/Gallery";
 import Bio from "../../components/Bio/Bio";
-import yt1 from '../../assets/yt1.png'
-import fb1 from '../../assets/fb1.png'
-import insta1 from '../../assets/insta1.png'
-import sc1 from '../../assets/sc1.png'
-import tt1 from '../../assets/tt1.png'
-import spotify1 from '../../assets/spotify1.png'
+import yt1 from '../../assets/icons/youtube.png'
+import fb1 from '../../assets/icons/facebook.png'
+import insta1 from '../../assets/icons/instagram.png'
+import sc1 from '../../assets/icons/soundcloud.png'
+import tt1 from '../../assets/icons/tik-tok.png'
+import spotify1 from '../../assets/icons/spotify.png'
 
 function Home() {
   let subtitle;
