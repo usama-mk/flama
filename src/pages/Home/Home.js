@@ -27,7 +27,7 @@ function Home() {
       boxShadow: "rgba(0, 0, 0, 0.96) 0px 30px 70px 70px",
       border: "none",
       backgroundColor: galleryModalIsOpen
-        ? "rgba(0, 0, 0, 0.55)"
+        ? "black"  //rgba(0, 0, 0, 0.55) gallery
         : bioModalIsOpen
         ? "black"
         : "",

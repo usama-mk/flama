@@ -5,7 +5,7 @@ import Home from './pages/Home/Home';
 
 function App() {
   return (
-    <div className="App"> 
+    <div className="Appz"> 
     <Tilt className="Tilt" options={{ max : 1 , scale: 1, perspective: 1500,}}  >
     <div  className="App">
         <img style={{opacity: '0'}} src={logo} alt="" />

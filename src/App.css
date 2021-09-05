@@ -1,6 +1,7 @@
 .App{
   max-height: 100vh;
   max-width: 100vw;
+  min-height: 100vh;
   background-image: url('./assets/background2.png');
   background-size: contain, cover;
   background-repeat: no-repeat;

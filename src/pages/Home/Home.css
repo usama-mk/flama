@@ -27,7 +27,7 @@
 
 .ReactModal__Overlay {
   opacity: 0;
-  transition: opacity 2000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
 }
 
 .ReactModal__Overlay--after-open {
@@ -147,7 +147,7 @@
 
 .Line_Copy_2 {
   position: fixed;
-  top: 60%;
+  top: 57.5%;
   right: 2.7%;
   overflow: visible;
   width: 2.524px;
