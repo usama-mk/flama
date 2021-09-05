@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Masonry from 'react-masonry-css'
 import './Gallery.css'
 import g1 from '../../assets/galleryImages/1.jpeg'
 import g2 from '../../assets/galleryImages/2.jpeg'
@@ -29,11 +30,11 @@ function Gallery({setGalleryModalIsOpen}) {
         {
             src: g1,
             width: '200px',
-            height: '300px'
+            height: '320px'
         },
         {
             src: g2,
-            width: '150px',
+            width: '200px',
             height: '200px'
         },
         {
@@ -52,7 +53,7 @@ function Gallery({setGalleryModalIsOpen}) {
         },
         {
             src: g6,
-            width: '150px',
+            width: '200px',
             height: '300px'
         },
         {
@@ -84,13 +85,28 @@ function Gallery({setGalleryModalIsOpen}) {
                        </div>
                     </div>
                 ):(
-                    images.map((image, key)=>{
-                        return(
-                            <div key={key} className="galleryItem" >
-                                <img className="pointer" key={key} onClick={()=>{handleOnImageClick(image.src)}} src={image.src} height={image.height} width={image.width}   alt="" />
-                            </div>
-                        )
-                    })
+                    // images.map((image, key)=>{
+                    //     return(
+                    //         <div key={key} className="galleryItem" >
+                    //             <img className="pointer" key={key} style={{objectFit: 'cover'}}  onClick={()=>{handleOnImageClick(image.src)}} src={image.src} height={image.height} width={image.width}   alt="" />
+                    //         </div>
+                    //     )
+                    // })
+
+                    <Masonry
+  breakpointCols={3}
+  className="my-masonry-grid"
+  columnClassName="my-masonry-grid_column">
+  {
+        images.map((image, key)=>{
+            return(
+                <div key={key} className="galleryItem" >
+                    <img className="pointer"style={{objectFit: 'cover'}}  key={key} onClick={()=>{handleOnImageClick(image.src)}} src={image.src} height={image.height} width={image.width}   alt="" />
+                </div>
+            )
+        })
+  }
+</Masonry>
                 )
             }
 
