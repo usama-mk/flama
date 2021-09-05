@@ -5,12 +5,12 @@ import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
 import Gallery from "../../components/Gallery/Gallery";
 import Bio from "../../components/Bio/Bio";
-import yt from '../../assets/yt.png'
-import fb from '../../assets/fb.png'
-import insta from '../../assets/insta.png'
-import sc from '../../assets/sc.png'
-import tt from '../../assets/tt.png'
-import spotify from '../../assets/fb.png'
+import yt1 from '../../assets/yt1.png'
+import fb1 from '../../assets/fb1.png'
+import insta1 from '../../assets/insta1.png'
+import sc1 from '../../assets/sc1.png'
+import tt1 from '../../assets/tt1.png'
+import spotify1 from '../../assets/spotify1.png'
 
 function Home() {
   let subtitle;
@@ -56,12 +56,12 @@ function Home() {
         </div>
 
         <div className="icons">
-          <img src={insta} alt="" />
-          <img src={fb} alt="" />
-          <img src={yt} alt="" />
-          <img src={tt} alt="" />
-          <img src={sc} alt="" />
-          <img src={spotify} alt="" />
+          <img src={insta1} alt="" />
+          <img src={fb1} alt="" />
+          <img src={yt1} alt="" />
+          <img src={tt1} alt="" />
+          <img src={sc1} alt="" />
+          <img src={spotify1} alt="" />
         </div>
       </div>
 
@@ -154,6 +154,7 @@ function Home() {
         style={customStyles}
         contentLabel="Example Modal"
         id="Modal"
+        
       >
         <Gallery setGalleryModalIsOpen={setGalleryModalIsOpen} />
       </Modal>

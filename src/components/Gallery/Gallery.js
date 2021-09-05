@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Gallery.css'
 import g1 from '../../assets/g1.png'
 import g2 from '../../assets/g2.png'
 import g3 from '../../assets/g3.png'
+import g4 from '../../assets/g4.png'
+import g5 from '../../assets/g5.png'
+import g6 from '../../assets/g6.png'
+import g7 from '../../assets/g7.png'
 
 function Gallery({setGalleryModalIsOpen}) {
     const [isImageOpen, setIsImageOpen]= useState(false)
@@ -11,7 +15,14 @@ function Gallery({setGalleryModalIsOpen}) {
     const handleOnImageClick=(src)=>{
         setIsImageOpen(true)
         setImage(src)
+      
     }
+
+    useEffect(()=>{
+        if(isImageOpen){
+            openImage('openedImage')
+        }
+    },[isImageOpen])
 
     const images=[
         {
@@ -30,15 +41,30 @@ function Gallery({setGalleryModalIsOpen}) {
             height: '150px'
         },
         {
-            src: g1,
+            src: g4,
             width: '200px',
             height: '300px'
         },{
-            src: g1,
+            src: g5,
+            width: '200px',
+            height: '150px'
+        },
+        {
+            src: g6,
+            width: '150px',
+            height: '300px'
+        },
+        {
+            src: g7,
             width: '200px',
             height: '300px'
         },
     ]
+
+    const openImage=(id)=>{
+        const element= document.getElementById(id)
+        element.classList.toggle("transparent");
+    }
     return (
         <div className="gallery">
             {
@@ -48,7 +74,7 @@ function Gallery({setGalleryModalIsOpen}) {
                        <span className="imageCloseButton pointer" onClick={()=> setIsImageOpen(false)} >X</span>
                        </div>
                        <div className="openedImageWrapper">
-                       <img src={image}  alt="" />
+                       <img id='openedImage'  className="transparent" src={image}  alt="" />
                        </div>
                     </div>
                 ):(
