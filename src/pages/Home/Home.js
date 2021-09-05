@@ -50,7 +50,7 @@ function Home() {
       <div className="homeLeft">
         <div id="Flama" class="Flama">
           <div style={{opacity:'1'}} className="flama_m" id="Flama_m">
-            <span>Flama</span>
+            <span >Flama</span>
           </div>
         </div>
 
