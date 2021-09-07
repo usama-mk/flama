@@ -19,11 +19,11 @@
   src: local("Didot"), url(../../assets/fonts/Didot.ttc) format("ttc");
 }
 
-
 @font-face {
-    font-family: "Biancha-X3VOa";
-    src: local("Biancha-X3VOa"), url(../../assets/fonts/Biancha-X3VOa.otf) format("otf");
-  }
+  font-family: "Biancha-X3VOa";
+  src: local("Biancha-X3VOa"),
+    url(../../assets/fonts/Biancha-X3VOa.otf) format("otf");
+}
 
 .ReactModal__Overlay {
   opacity: 0;
@@ -289,177 +289,185 @@
 }
 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1200px) {
    
     
   
     #Galera {
-      top: 30.7%;
+      top: 28.5%;
+      left: 95%;
+    }
+     
+    
+    
+  }
+
+  @media screen and (max-width: 1050px) {
+   
+    
+  
+    #Galera {
+      top: 28.5%;
+      left: 94.5%;
+    }
+     
+    
+    
+  }
+
+  @media screen and (max-width: 900px) {
+   
+    
+  
+    #Galera {
+      top: 28.5%;
       left: 94%;
     }
      
     
     
   }
-
-  /* @media screen and (max-width: 900px) {
-   
-    
-  
-    #Galera {
-      top: 31.7%;
-      left: 92%;
-    }
-     
-    
-    
-  } */
-
-  @media screen and (max-width: 560px) {
-   
-    
-  
-    #Galera {
-      top: 31.7%;
-      left: 92%;
-    }
-     
-    
-    
+@media screen and (max-width: 860px) {
+  #Galera {
+    /* top: 30.7%; */
+    left: 94%;
   }
+}
+
+@media screen and (max-width: 700px) {
+    #Galera {
+      /* top: 30.7%; */
+      left: 93%;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    #Galera {
+      /* top: 30.7%; */
+      left: 92.5%;
+    }
+  }
+
+@media screen and (max-width: 560px) {
+  #Galera {
+    /* top: 31.7%; */
+    left: 92%;
+  }
+}
 
 @media screen and (max-width: 460px) {
-    .flama {
-      width: 225px;
-      height: 100px;
-    }
-  
-    .flama_m {
-      width: 225px;
-      height: 100px;
-  
-      font-size: 58px;
-    }
-    .icons > img {
-      width: 16px;
-      height: 16px;
-    }
-  
-    #galeria-menu-item {
-      width: 27px;
-      height: 154px;
-    }
-  
-    #galeria-menu-item_z {
-      width: 31px;
-      height: 152.5px;
-    }
-  
-    .Line_Copy {
-      top: 35%;
-      right: 2.7%;
-  
-      width: 1.524px;
-      height: 23.524px;
-    }
-  
-    .Line_Copy_2 {
-      top: 53.5%;
-      right: 2.7%;
-  
-      width: 1.524px;
-      height: 23.524px;
-    }
-  
-    #Galera {
-      top: 31.7%;
-      left: 92%;
-    }
-    .galleryText {
-      font-size: 20px;
-      padding-right: 20px;
-      margin-right: 20px;
-    }
-  
-    #musica-menu-item {
-      
-      width: 120px;
-      height: 37px;
-       
-    }
-    
-    #musica-menu-item_u {
-      width: 100px;
-      height: 31px;
-    
-    }
-    
-    .Line_Copy_5 {
-      padding-top: 5px;
-      
-      width: 32.015px;
-      height: 2.27px;
-      /* left align */
-      padding-left: 9px;
-      position: relative;
-      bottom: -15%;
-      /* transform: matrix(1,0,0,1,0,0); */
-    }
-    
-    #Line_Copy_5 {
-      
-      stroke-width: 1px;
-       
-    }
-    
-    #Msica {
-   
-      width: 125px;
-      height: 31px;
-      position: relative;
-      bottom: 10%;
-      font-size: 20px;
-      color: rgba(254, 254, 254, 1);
-    }
-    
-    .Line_Copy_6 {
-      width: 43.503px;
-      height: 2px;
-     
-       
-    }
-    
-    #Line_Copy_6 {
-       
-      stroke-width: 1px;
-      
-    }
-  
-  
-    .homeRightOption {
-     
-      font-size: 20px;
-      top: 2%;
-      left: 99.7%;
-    }
-    
-    .Line {
-      
-      width: 1.524px;
-      height: 43.524px;
-      left: 97%;
-      top: 5%;
-      
-    }
-    #Line {
-      
-      stroke-width: 1px;
-      
-    }
-    
-    
+  .flama {
+    width: 225px;
+    height: 100px;
   }
 
+  .flama_m {
+    width: 225px;
+    height: 100px;
+
+    font-size: 58px;
+  }
+  .icons > img {
+    width: 16px;
+    height: 16px;
+  }
+
+  #galeria-menu-item {
+    width: 27px;
+    height: 154px;
+  }
+
+  #galeria-menu-item_z {
+    width: 31px;
+    height: 152.5px;
+  }
+
+  .Line_Copy {
+    top: 35%;
+    right: 2.7%;
+
+    width: 1.524px;
+    height: 23.524px;
+  }
+
+  .Line_Copy_2 {
+    top: 53.5%;
+    right: 2.7%;
+
+    width: 1.524px;
+    height: 23.524px;
+  }
+
+  #Galera {
+    top: 31.7%;
+    left: 92%;
+  }
+  .galleryText {
+    font-size: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+
+  #musica-menu-item {
+    width: 120px;
+    height: 37px;
+  }
+
+  #musica-menu-item_u {
+    width: 100px;
+    height: 31px;
+  }
+
+  .Line_Copy_5 {
+    padding-top: 5px;
+
+    width: 32.015px;
+    height: 2.27px;
+    /* left align */
+    padding-left: 9px;
+    position: relative;
+    bottom: -15%;
+    /* transform: matrix(1,0,0,1,0,0); */
+  }
+
+  #Line_Copy_5 {
+    stroke-width: 1px;
+  }
+
+  #Msica {
+    width: 125px;
+    height: 31px;
+    position: relative;
+    bottom: 10%;
+    font-size: 20px;
+    color: rgba(254, 254, 254, 1);
+  }
+
+  .Line_Copy_6 {
+    width: 43.503px;
+    height: 2px;
+  }
+
+  #Line_Copy_6 {
+    stroke-width: 1px;
+  }
+
+  .homeRightOption {
+    font-size: 20px;
+    top: 2%;
+    left: 99.7%;
+  }
+
+  .Line {
+    width: 1.524px;
+    height: 43.524px;
+    left: 97%;
+    top: 5%;
+  }
+  #Line {
+    stroke-width: 1px;
+  }
+}
 
 @media screen and (max-width: 360px) {
   .flama {
@@ -515,21 +523,18 @@
   }
 
   #musica-menu-item {
-    
     width: 120px;
     height: 37px;
-     
   }
-  
+
   #musica-menu-item_u {
     width: 100px;
     height: 31px;
-  
   }
-  
+
   .Line_Copy_5 {
     padding-top: 5px;
-    
+
     width: 32.015px;
     height: 2.27px;
     /* left align */
@@ -538,15 +543,12 @@
     bottom: -15%;
     /* transform: matrix(1,0,0,1,0,0); */
   }
-  
+
   #Line_Copy_5 {
-    
     stroke-width: 1px;
-     
   }
-  
+
   #Msica {
- 
     width: 125px;
     height: 31px;
     position: relative;
@@ -554,43 +556,29 @@
     font-size: 20px;
     color: rgba(254, 254, 254, 1);
   }
-  
+
   .Line_Copy_6 {
     width: 43.503px;
     height: 2px;
-   
-     
-  }
-  
-  #Line_Copy_6 {
-     
-    stroke-width: 1px;
-    
   }
 
+  #Line_Copy_6 {
+    stroke-width: 1px;
+  }
 
   .homeRightOption {
-   
     font-size: 20px;
     top: 2%;
     left: 99.7%;
   }
-  
+
   .Line {
-    
     width: 1.524px;
     height: 43.524px;
     left: 95.5%;
     top: 5%;
-    
   }
   #Line {
-    
     stroke-width: 1px;
-    
   }
-  
-  
 }
-
-
