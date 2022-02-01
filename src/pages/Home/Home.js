@@ -4,12 +4,12 @@ import Modal from "react-modal";
 import "pro-gallery/dist/statics/main.css";
 import Gallery from "../../components/Gallery/Gallery";
 import Bio from "../../components/Bio/Bio";
-import yt1 from '../../assets/icons/youtube.png'
-import fb1 from '../../assets/icons/facebook.png'
-import insta1 from '../../assets/icons/instagram.png'
-import sc1 from '../../assets/icons/soundcloud.png'
-import tt1 from '../../assets/icons/tik-tok.png'
-import spotify1 from '../../assets/icons/spotify.png'
+import yt1 from "../../assets/icons/youtube.png";
+import fb1 from "../../assets/icons/facebook.png";
+import insta1 from "../../assets/icons/instagram.png";
+import sc1 from "../../assets/icons/soundcloud.png";
+import tt1 from "../../assets/icons/tik-tok.png";
+import spotify1 from "../../assets/icons/spotify.png";
 
 function Home() {
   let subtitle;
@@ -27,11 +27,11 @@ function Home() {
       boxShadow: "rgba(0, 0, 0, 0.96) 0px 30px 70px 70px",
       border: "none",
       backgroundColor: galleryModalIsOpen
-        ? "black"  //rgba(0, 0, 0, 0.55) gallery
+        ? "black" //rgba(0, 0, 0, 0.55) gallery
         : bioModalIsOpen
         ? "black"
         : "",
-      zIndex: '1',
+      zIndex: "1",
     },
 
     overlay: {
@@ -49,8 +49,8 @@ function Home() {
     >
       <div className="homeLeft">
         <div id="Flama" class="Flama">
-          <div style={{opacity:'1'}} className="flama_m" id="Flama_m">
-            <span >Flama</span>
+          <div style={{ opacity: "1" }} className="flama_m" id="Flama_m">
+            <span>Flama</span>
           </div>
         </div>
 
@@ -65,49 +65,36 @@ function Home() {
       </div>
 
       <div className="homeRight">
-      <svg class="Line" viewBox="0.5 0.5 0.5 41.5">
-				<path id="Line" d="M 0.5 0.5 L 1 42">
-				</path>
-			</svg>
+        <svg class="Line" viewBox="0.5 0.5 0.5 41.5">
+          <path id="Line" d="M 0.5 0.5 L 1 42"></path>
+        </svg>
         <div
           className="homeRightOption pointer"
           onClick={() => setBioModalIsOpen(true)}
         >
-         
           Bio
         </div>
 
-        {/* Bio */}
-       
-        {/*  */}
-
-        {/* Gallery */}
-        {/* <div
-          className="homeRightOption"
-          onClick={() => setGalleryModalIsOpen(true)}
-        >
-          Gallery
-        </div> */}
-        <div  className="galleryy">
+        <div className="galleryy">
           <div id="galeria-menu-item" class="galeria_menu_item">
             <div id="galeria-menu-item_z">
               <svg class="Line_Copy" viewBox="0.5 0.5 0.5 41.5">
                 <path id="Line_Copy" d="M 0.5 0.5 L 1 42"></path>
               </svg>
               <svg class="Line_Copy_2" viewBox="0.5 0.5 0.5 41.5">
-				<path id="Line_Copy_2" d="M 0.5 0.5 L 1 42">
-				</path>
-			</svg>
-              <div className="pointer" onClick={() => setGalleryModalIsOpen(true)}  id="Galera">
-                <span className="galleryText" >Galería</span>
+                <path id="Line_Copy_2" d="M 0.5 0.5 L 1 42"></path>
+              </svg>
+              <div
+                className="pointer"
+                onClick={() => setGalleryModalIsOpen(true)}
+                id="Galera"
+              >
+                <span className="galleryText">Galería</span>
               </div>
             </div>
           </div>
-          
         </div>
 
-        {/* <div className="homeRightOption">musica</div> */}
-        {/* Musica component */}
         <div id="musica-menu-item" class="musica_menu_item">
           <div style={{ display: "flex" }} id="musica-menu-item_u">
             <div
@@ -148,19 +135,16 @@ function Home() {
 
       <Modal
         isOpen={galleryModalIsOpen}
-        //  onAfterOpen={afterOpenModal}
         onRequestClose={() => setGalleryModalIsOpen(false)}
         style={customStyles}
         contentLabel="Example Modal"
         id="Modal"
-        
       >
         <Gallery setGalleryModalIsOpen={setGalleryModalIsOpen} />
       </Modal>
 
       <Modal
         isOpen={bioModalIsOpen}
-        //  onAfterOpen={afterOpenModal}
         onRequestClose={() => setBioModalIsOpen(false)}
         style={customStyles}
         contentLabel="Example Modal"

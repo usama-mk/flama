@@ -1,28 +1,28 @@
 @font-face {
   font-family: "Biancha";
-  src: local("Biancha"), url(../../assets/fonts/Biancha.otf) format("otf");
+  src: local("Biancha"), url(../../assets/fonts/Biancha.otf) format("woff");
 }
 
 @font-face {
   font-family: "SnellRoundhand";
   src: local("SnellRoundhand"),
-    url(../../assets/fonts/Biancha.otf) format("otf");
+    url(../../assets/fonts/Biancha.otf) format("woff");
 }
 
 @font-face {
   font-family: "gilroy";
-  src: local("gilroy"), url(../../assets/fonts/gilroy.ttf) format("ttf");
+  src: local("gilroy"), url(../../assets/fonts/gilroy.ttf) format("woff");
 }
 
 @font-face {
   font-family: "Didot";
-  src: local("Didot"), url(../../assets/fonts/Didot.ttc) format("ttc");
+  src: local("Didot"), url(../../assets/fonts/Didot.ttc) format("woff");
 }
 
 @font-face {
   font-family: "Biancha-X3VOa";
   src: local("Biancha-X3VOa"),
-    url(../../assets/fonts/Biancha-X3VOa.otf) format("otf");
+    url(../../assets/fonts/Biancha-X3VOa.otf) format("woff");
 }
 
 .ReactModal__Overlay {
@@ -288,45 +288,26 @@
   shape-rendering: auto;
 }
 
-
 @media screen and (max-width: 1200px) {
-   
-    
-  
-    #Galera {
-      top: 28.5%;
-      left: 95%;
-    }
-     
-    
-    
+  #Galera {
+    top: 28.5%;
+    left: 95%;
   }
+}
 
-  @media screen and (max-width: 1050px) {
-   
-    
-  
-    #Galera {
-      top: 28.5%;
-      left: 94.5%;
-    }
-     
-    
-    
+@media screen and (max-width: 1050px) {
+  #Galera {
+    top: 28.5%;
+    left: 94.5%;
   }
+}
 
-  @media screen and (max-width: 900px) {
-   
-    
-  
-    #Galera {
-      top: 28.5%;
-      left: 94%;
-    }
-     
-    
-    
+@media screen and (max-width: 900px) {
+  #Galera {
+    top: 28.5%;
+    left: 94%;
   }
+}
 @media screen and (max-width: 860px) {
   #Galera {
     /* top: 30.7%; */
@@ -335,18 +316,18 @@
 }
 
 @media screen and (max-width: 700px) {
-    #Galera {
-      /* top: 30.7%; */
-      left: 93%;
-    }
+  #Galera {
+    /* top: 30.7%; */
+    left: 93%;
   }
+}
 
-  @media screen and (max-width: 620px) {
-    #Galera {
-      /* top: 30.7%; */
-      left: 92.5%;
-    }
+@media screen and (max-width: 620px) {
+  #Galera {
+    /* top: 30.7%; */
+    left: 92.5%;
   }
+}
 
 @media screen and (max-width: 560px) {
   #Galera {
